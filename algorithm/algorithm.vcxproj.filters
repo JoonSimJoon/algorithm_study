@@ -9,9 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="소스 파일\IOI">
-      <UniqueIdentifier>{1ae902b7-8f68-420f-941b-a5cdeb71e1e7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="리소스 파일">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
@@ -19,31 +16,49 @@
     <Filter Include="소스 파일\BOJ">
       <UniqueIdentifier>{719f675f-7c63-4c66-877a-35d65386c4d8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\studyalone">
+      <UniqueIdentifier>{551ddd26-bf97-4d8f-a031-3778606761d9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1019_ns.cpp">
+    <ClCompile Include="1000\1019_ns.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
-    <ClCompile Include="1050.cpp">
+    <ClCompile Include="1000\1050.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
-    <ClCompile Include="5525.cpp">
+    <ClCompile Include="1000\1188.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
-    <ClCompile Include="7696.cpp">
+    <ClCompile Include="1000\1613.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
-    <ClCompile Include="14437.cpp">
+    <ClCompile Include="2000\2042_segtree.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
-    <ClCompile Include="5_2.cpp">
-      <Filter>소스 파일\IOI</Filter>
+    <ClCompile Include="2000\2452_ns.cpp">
+      <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
-    <ClCompile Include="08_4_ns.cpp">
-      <Filter>소스 파일\IOI</Filter>
+    <ClCompile Include="3000\3827_ns.cpp">
+      <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
-    <ClCompile Include="1_2.cpp">
-      <Filter>소스 파일\IOI</Filter>
+    <ClCompile Include="5000\5525.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="7000\7696.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="8000\8980.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="8000\8979.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="11000\11658_2dsegtree.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1000\1009.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
