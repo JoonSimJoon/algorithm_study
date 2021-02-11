@@ -81,7 +81,7 @@
     <ClCompile Include="16000\16563.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="14000\14476.cpp">
+    <ClCompile Include="14000\14476_ns_segtree.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
