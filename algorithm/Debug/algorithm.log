@@ -1,2 +1,3 @@
-﻿  14476.cpp
+﻿  14444.cpp
+C:\Users\wesle\source\repos\algorithm\algorithm\14000\14444.cpp(19,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
   algorithm.vcxproj -> C:\Users\wesle\source\repos\algorithm\Debug\algorithm.exe

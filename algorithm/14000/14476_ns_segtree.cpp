@@ -2,9 +2,19 @@
 #include <algorithm>
 #include <vector>
 using namespace std;
-int N, ans;
-vector<int> v;
-int numc[200000100];
+#define ll long long
+ll gcd(ll a, ll b){
+	if (b == 0) {
+		return a;
+	}
+	else {
+		return gcd(b, a % b);
+	}
+}
+vector<ll> v;
+ll N,arr1[1000010], arr2[1000010];
+ll a, b;
+ll K=-1, ans=-1;
 int main() {
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
@@ -14,28 +24,38 @@ int main() {
 		int K;
 		cin >> K;
 		v.push_back(K);
-		for (int i = 1; i*2 <= K; i++) {
-			if (K % i == 0) {
-				numc[i]++;		
-			}
-		}	
-		numc[K]++;
 	}
 	sort(v.begin(), v.end());
-	for (int i = v[N - 1]; i >= 1; i--) {
-		if (numc[i] == N) {
-			ans = -1;
-			break;
-		}
-		else if (numc[i] == N - 1) {
-			ans = i;
-			break;
-		}
-	}
-	cout << ans << " ";
-	if (ans == -1) return 0;
+	a = v[0];
+	b = v[N - 1];
 	for (int i = 0; i < N; i++) {
-		if (v[i] % ans != 0) cout << v[i];
+		a=gcd(v[i], a);
+		b=gcd(b, v[N - 1 - i]);
+		arr1[i] = a;
+		arr2[N - 1 - i] = b;
 	}
+	a = 0, b = 0;
+	for (int i = 0; i < N; i++) {
+		int flag = 0;
+		a = b = -1;
+		if (i != 0) {
+			if (arr1[i-1] > arr1[i])flag++;
+		}
+		else flag++;
+		if (i != N - 1) {
+			if (arr2[i] < arr2[i + 1])flag++;
+		}
+		else flag++;
+		if (flag == 2) {
+			if (i == 0) ans = arr2[1];
+			else if (i == N - 1) ans = arr2[N - 2];
+			else ans = min(arr1[i - 1], arr2[i + 1]);
+			K = v[i];
+		}
+		//cout << arr1[i] << " " << arr2[i] << "\n";
+	}
+	if (ans == -1) cout << "-1\n";
+	else cout << ans << " " << K << "\n";
+	
 	return 0;
 }
