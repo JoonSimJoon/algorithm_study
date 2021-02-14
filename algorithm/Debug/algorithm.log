@@ -1,5 +1,2 @@
-﻿  17250.cpp
-C:\Users\wesle\source\repos\algorithm\algorithm\17000\17250.cpp(30,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\wesle\source\repos\algorithm\algorithm\17000\17250.cpp(32,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\wesle\source\repos\algorithm\algorithm\17000\17250.cpp(37,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+﻿  2179.cpp
   algorithm.vcxproj -> C:\Users\wesle\source\repos\algorithm\Debug\algorithm.exe
