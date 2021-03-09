@@ -51,4 +51,5 @@ int main() {
 		for (int i = 0; i < N; i++) cout << ans[i] << " ";
 	}
 	return 0;
-}
+} 
+// 왜 안풀리는데ㅐ ㅋㅋㅋㅋ
