@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-	cout<<"응애"<<"\n";
+int main() {
+   int n;
+   cin>>n;
+   cout<<n<<endl;
+   return 0;
 }
