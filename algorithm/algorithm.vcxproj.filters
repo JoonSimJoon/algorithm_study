@@ -144,7 +144,10 @@
     <ClCompile Include="1000\1012.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="12000\12972.cpp">
+    <ClCompile Include="12000\12972_ns.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1000\1967.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
