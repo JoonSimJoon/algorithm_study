@@ -243,5 +243,11 @@
     <ClCompile Include="11000\11931.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="13000\13448_ns.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="14000\14371.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
