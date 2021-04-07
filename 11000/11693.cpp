@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include <vector>
 using namespace std;
 #define ll long long
@@ -26,5 +27,6 @@ int main() {
 		cout << v[i] << " ";
 	}
 	return 0;
-
 }
+
+//sudo apt-get install g++-multilib
