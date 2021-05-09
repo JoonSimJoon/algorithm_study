@@ -1,24 +1,25 @@
 #include <iostream>
+#include <algorithm>
 #include <vector>
 using namespace std;
-
-int N,a,ans;
+int mx=1e9+1,a,ans;
 vector<int> v;
-int dp[1010]={1, };
+
 int main(){
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
 	cout.tie(NULL);
+	int N;
 	cin>>N;
+	v.push_back(-mx);
 	for(int i=0;i<N;i++){
 		cin>>a;
-		v.push_back(a);
-		dp[i]=1;
-		for(int j=0;j<i;j++){
-			if(v[j]<v[i]) dp[i]=max(dp[i],dp[j]+1);
+		if(v.back()<a) v.push_back(a),ans++;
+		else{
+			int x = lower_bound(v.begin(),v.end(),a)-v.begin();
+			v[x]=a;
 		}
-		ans=max(ans,dp[i]);
 	}
-	cout<<ans<<"\n";
+	cout<<N-ans<<"\n";
 	return 0;
 }
