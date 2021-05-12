@@ -20,53 +20,46 @@ int main() {
             cin>>a>>b;
             a--;
             b--;
+            if((a-b)%2==0) ans=-1;
             if(ans==-1) break;
             stack<int> s;
             for(int j=a;j<=b;j++){
-                if(s.empty()==0){
-                    if(gal[j]=='('){
-                    	if(s.top()<0){
-                    		gal[j]=')';
-                    		s.pop();
+               	if(gal[j]=='('){
+               		if(s.empty()==0){
+               			if(s.top()<0){
+               				s.pop();
+               				if(visited[j]==1){
+								ans=-1;
+								break;
+							}else{
+								visited[j]=1;
+							}
+							cnt++;
+               				gal[j]=')';
+						   }
+					}
+               		else s.push(j);
+				}else{
+					if(s.empty()==1){
+						if(visited[j]==1){
+							ans=-1;
+							break;
+						}else{
+							visited[j]=1;
 						}
-					} 
-                    else{
+						gal[j]='(';
+						if(j==0){
+							s.push(-3010);
+						}
+						else s.push(-j);
+					}else{
 						s.pop();
-                    }
-                }else{
-                    if(gal[j]=='(') s.push(j);
-                    else{
-                        if(visited[j]==0){
-                            visited[j]=1;
-                            gal[j]='(';
-                            s.push(-j);
-                            cnt++;
-                        }else{
-                            ans=-1;
-                        }
-                    }
-                }
-                cout<<j<<" "<<cnt<<" "<<ans<<"\n";
+					}
+				}
+               // cout<<j<<" "<<cnt<<" "<<ans<<"\n";
             }
-            if(!s.empty()){
-                while(ans!=-1 && !s.empty()){
-                    if(visited[s.top()]==1){
-                        ans=-1;
-                    }else{
-                        visited[s.top()]=1;
-                        gal[s.top()]=')';
-                        cnt++;
-                        s.pop();
-                        if(s.empty()==1){
-                            ans=-1;
-                            break;
-                        }else{
-                            s.pop();
-                        }
-                    }
-                }
-            } 
-            cout<<gal<<"\n";
+            
+          //  cout<<gal<<"\n";
             
         }
         if(ans!=-1){
