@@ -24,7 +24,7 @@ int main(){
 			}
 			if(i%19==0) cout<<"\n";
 		}
-		//cout<<"\n";
+		cout<<"\n";
 	}
 	return 0;
 }
