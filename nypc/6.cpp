@@ -1,33 +1,29 @@
-#include <iostream>
+    #include <iostream>
+#include <vector>
 #include <algorithm>
 using namespace std;
-
 #define ll long long
 
-ll N,sum,ans,cnt;
-ll arr[200010];
+ll N,K,cnt;
+vector<ll> v;
 
 int main(){
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
 	cout.tie(NULL);
-	cin>>N;
-	for(int i=0;i<N;i++){
-		cin>>arr[i];
-		sum+=arr[i];
+	cin>>N>>K;
+	for(ll a,i=0;i<N;i++){
+		cin>>a;
+		v.push_back(a);
 	}
-	ll ssum = sum/N;
-	ll mod = sum%N;
-	sort(arr,arr+N);
-	reverse(arr,arr+N);
-	for(int i=0;i<N;i++){
-		if(arr[i]>ssum){
+	ll st=0;
+	cnt=1;i
+	for(ll i=0;i<N;i++){
+		if(v[i]>v[st]+K || v[st]>v[i]){
+			st=i;
 			cnt++;
-			ans+=arr[i]-ssum;
-		} 
+		}
 	}
-	if(cnt>mod) ans-=mod;
-	else ans-=cnt;
-	cout<<ans;
+	cout<<cnt;
 	return 0;
 }
