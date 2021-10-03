@@ -1,18 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
-long long sum;
-int x;
-int main(){
-    ios::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
-    int N;
-    cin>>N;
-    for(int i=0;i<N;i++){
-        cin>>x;
-        sum+=x;
+
+int main() {
+    ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+
+    int n; cin >> n;
+    int x = 0;
+    for (int i = 0; i < n; i++) {
+        int p; cin >> p;
+        if (p % 4 == 3) {
+            p++;
+        } else if (p > 0 && p % 4 == 0) {
+            p--;
+        
+}        x ^= p;
     }
-    if(sum%N==0) cout<<"koosaga"<<"\n";
-    else cout<<"cubelover\n";
+
+    cout << (x != 0 ? "koosaga" : "cubelover") << '\n';
+
     return 0;
 }
