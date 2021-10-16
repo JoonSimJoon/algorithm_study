@@ -22,6 +22,8 @@ int main(){
 			now.second=v[i];
 			xnt++;
 		}
+		if(now.second)
+
 		if(xnt==3){
 			cnt+=now.second*7;
 			xnt=0;
