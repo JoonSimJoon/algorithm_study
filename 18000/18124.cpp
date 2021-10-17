@@ -17,7 +17,6 @@ int main(){
         }
         cout<<ans;
     }
-    cout<<"\n";
-
+    cout<<"\n"; // asd
     return 0;
 }
